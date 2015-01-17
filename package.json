@@ -1,0 +1,40 @@
+{
+    "name": "ReactUI",
+    "version": "0.0.1",
+    "description": "React UI (Rename me)",
+    "author": {
+        "name": "WebbyLab",
+        "email": "office@webbylab.com",
+        "url": "http://webbylab.com"
+    },
+    "private": true,
+    "scripts": {
+        "build": "webpack src/main.js public/static/build/main.js",
+        "start": "webpack -d --watch --colors  src/main.js public/static/build/main.js",
+        "bower_install": "bower install --config.interactive=false"
+    },
+    "dependencies": {
+        "q": "*",
+        "bower": "*",
+        "lodash": "*",
+        "jquery": "*",
+        "pubsub-js": "*",
+        "react": "0.11.2",
+        "react-tools": "0.11.2",
+        "moment": "~2.8.3",
+        "react-classset": "*",
+        "backbone": "~1.1.2",
+        "select2-browserify": "*"
+    },
+    "devDependencies": {
+        "webpack": "*",
+        "jsxhint": "*",
+        "es6-loader": "^0.2.0",
+        "jsx-loader": "0.11.0",
+        "json-loader": "~0.5.0",
+        "jshint-loader": "*",
+        "url-loader": "*",
+        "css-loader": "*",
+        "style-loader": "*"
+    }
+}

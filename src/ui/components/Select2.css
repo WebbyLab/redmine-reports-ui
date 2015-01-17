@@ -1,0 +1,9 @@
+.Select2 {
+    width: 185px !important;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.Select2 .select2-choices{
+    border-radius: 3px !important;
+}
