@@ -1,0 +1,6 @@
+.chart-wrap svg {
+    min-height: 500px;
+}
+.chart-wrap h1 {
+    text-align: center
+}
