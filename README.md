@@ -1,12 +1,17 @@
-RUN DEVELOPMENT VERSION
-1. npm install
-2. bower install
-3. npm start
-4. open http://localhost:8080 in browser
+# Redmine-reports UI
+Redmine time logging application built with [Node.js](http://nodejs.org/)
+##Installation
+git clone https://github.com/webbylab/redmine-reports-ui.git
 
+npm install
+npm run bower_install
 
-BUILD PRODUCTION VERSION
-1. npm install
-2. bower install
-3. nmp run build
-4. folder "public" contains production version. Just open public/index.html in browser.
+cp etc/config.json.sample etc/config.json
+after copy set next field:
+
+    1.  redmineUrl (example: http://job.redmine.com/)
+
+npm run build
+
+Dont forget set staticPath in API config.
+After build, you can get to api url and see application
