@@ -1,4 +1,7 @@
 'use strict';
+
+var redmineUrl = require('../etc/config.json').redmineUrl;
+
 class App {
     constructor(args) {
         if (!args.ui) throw '"ui" required';
@@ -32,7 +35,7 @@ class App {
         });
 
         this.pubsub.subscribe('selectIssue', function(msg, issueID) {
-            window.open("http://redmine.webbylab.com/issues/" + issueID, '_blank');
+            window.open(redmineUrl + "/issues/" + issueID, '_blank');
         });
 
     }
